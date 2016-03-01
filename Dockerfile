@@ -48,7 +48,7 @@ RUN apt-get update && apt-get install -y nodejs --no-install-recommends && rm -r
 RUN apt-get update && apt-get install -y mysql-client postgresql-client sqlite3 --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
 # Rails
-ENV RAILS_VERSION 4.2.5.1
+ENV RAILS_VERSION 4.2.5.2
 RUN gem install rails --version "$RAILS_VERSION"
 
 # make the "en_US.UTF-8" locale so postgres will be utf-8 enabled by default
